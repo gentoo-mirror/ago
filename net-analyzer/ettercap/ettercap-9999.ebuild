@@ -38,7 +38,6 @@ DEPEND="${RDEPEND}
 src_prepare() {
 	#ettercap defaults to using mozilla so let's try to use xdg-open and pray it works
 	sed -i 's#mozilla -remote openurl(http://%host%url)#xdg-open 'http://%host%url'#' "${S}"/share/etter.conf || die
-	cmake-utils_src_prepare
 }
 
 src_configure() {

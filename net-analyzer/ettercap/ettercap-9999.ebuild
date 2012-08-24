@@ -30,6 +30,7 @@ RDEPEND="dev-libs/libpcre
 		x11-libs/pango
 	)
 	ncurses? ( sys-libs/ncurses )
+	plugins? ( >=net-misc/curl-7.26.0 )
 	ssl? ( dev-libs/openssl )"
 DEPEND="${RDEPEND}
 	sys-devel/flex

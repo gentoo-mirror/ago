@@ -11,7 +11,7 @@ inherit autotools
 DESCRIPTION="foo"
 HOMEPAGE="https://code.google.com/p/bonesi/"
 SRC_URI="https://${PN}.googlecode.com/files/${P}.tar.gz"
-KEYWORDS="amd64"
+KEYWORDS="~amd64 ~x86"
 
 LICENSE="Apache-2.0"
 IUSE=""

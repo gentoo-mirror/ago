@@ -4,7 +4,7 @@
 
 EAPI=4
 
-inherit autotools git-2
+inherit autotools eutils git-2
 
 DESCRIPTION="a GNU/Linux keylogger that works!"
 HOMEPAGE="https://code.google.com/p/logkeys/"
@@ -18,8 +18,14 @@ SLOT="0"
 DEPEND=""
 RDEPEND=""
 
-src_prepare () {
-	sed -i "s:-O3 ::" src/Makefile.in || die
-	sed -i "s:-O3 ::" src/Makefile.am || die
+src_prepare() {
+	epatch "${FILESDIR}/cxxflags.patch"
 	eautoreconf
+}
+
+src_install() {
+	default
+
+	newinitd "${FILESDIR}/${PN}-init.d" ${PN}
+	newconfd "${FILESDIR}/${PN}-conf.d" ${PN}
 }

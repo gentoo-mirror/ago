@@ -19,6 +19,10 @@ DEPEND="dev-libs/openssl"
 RDEPEND="${DEPEND}"
 
 src_prepare() {
-	sed -i -e "s: -Wall::g;s: /usr/local/lib::" configure.in || die
+	sed -i \
+		-e "s: /usr/local/lib::" \
+		-e "/CFLAGS/d" \
+		configure.in || die
+
 	eautoreconf
 }

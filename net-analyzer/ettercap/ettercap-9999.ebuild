@@ -33,6 +33,7 @@ RDEPEND="dev-libs/libpcre
 	plugins? ( >=net-misc/curl-7.26.0 )
 	ssl? ( dev-libs/openssl )"
 DEPEND="${RDEPEND}
+	app-text/ghostscript-gpl
 	sys-devel/flex
 	virtual/yacc"
 

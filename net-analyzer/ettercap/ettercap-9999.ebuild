@@ -4,33 +4,37 @@
 
 EAPI=4
 
+CMAKE_MIN_VERSION=2.8
+
 inherit cmake-utils git-2
 
-DESCRIPTION="A suite for man in the middle attacks and network mapping"
-HOMEPAGE="http://ettercap.sourceforge.net/"
+DESCRIPTION="A suite for man in the middle attacks"
+HOMEPAGE="http://ettercap.sourceforge.net https://github.com/Ettercap/ettercap"
 EGIT_REPO_URI="git://github.com/Ettercap/${PN}.git"
-EGIT_BRANCH="${PN}_rc"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="gtk ipv6 ncurses plugins ssl"
+IUSE="gtk ipv6 ncurses +plugins ssl"
 
 RDEPEND="dev-libs/libpcre
 	net-libs/libnet:1.1
-	net-libs/libpcap
+	>net-libs/libpcap-0.8.1
 	sys-libs/zlib
 	gtk? (
-		dev-libs/atk
-		dev-libs/glib:2
+		>=dev-libs/atk-1.2.4
+		>=dev-libs/glib-2.2.2:2
 		media-libs/freetype
 		x11-libs/cairo
 		x11-libs/gdk-pixbuf:2
-		x11-libs/gtk+:2
-		x11-libs/pango
+		>=x11-libs/gtk+-2.2.2:2
+		>=x11-libs/pango-1.2.3
 	)
-	ncurses? ( sys-libs/ncurses )
-	plugins? ( >=net-misc/curl-7.26.0 )
+	ncurses? ( >=sys-libs/ncurses-5.3 )
+	plugins? (
+		>=net-misc/curl-7.26.0
+		sys-devel/libtool
+	)
 	ssl? ( dev-libs/openssl )"
 DEPEND="${RDEPEND}
 	app-text/ghostscript-gpl
@@ -39,7 +43,8 @@ DEPEND="${RDEPEND}
 
 src_prepare() {
 	#ettercap defaults to using mozilla so let's try to use xdg-open and pray it works
-	sed -i 's#mozilla -remote openurl(http://%host%url)#xdg-open 'http://%host%url'#' "${S}"/share/etter.conf || die
+	sed -i 's#mozilla -remote openurl(http://%host%url)#xdg-open 'http://%host%url'#' \
+	share/etter.conf || die
 }
 
 src_configure() {

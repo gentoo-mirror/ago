@@ -18,7 +18,8 @@ IUSE=""
 
 DEPEND="dev-lang/python"
 RDEPEND="${DEPEND}
-	<www-client/pybugz-0.10"
+	app-portage/gentoolkit-dev
+	>=www-client/pybugz-0.10"
 
 src_install () {
 	for i in *.py;do newbin ${i} ${i/.py/};done

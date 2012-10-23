@@ -24,5 +24,5 @@ S="${WORKDIR}/${MY_P}"
 
 src_install() {
 	cmake-utils_src_install
-	use static-libs || rm -fr "${D}"usr/lib64/${MY_PN}.a
+	use static-libs || rm -fr "${D}"usr/lib*/${MY_PN}.a
 }

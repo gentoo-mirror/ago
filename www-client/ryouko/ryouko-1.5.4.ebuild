@@ -4,6 +4,9 @@
 
 EAPI=4
 
+PYTHON_COMPAT=( python{2_5,2_6,2_7} )
+PYTHON_REQ_USE="tk"
+
 inherit distutils-r1
 
 DESCRIPTION="PyQt4 web browser"
@@ -11,7 +14,7 @@ HOMEPAGE="https://github.com/foxhead128/ryouko"
 SRC_URI="mirror://github/foxhead128/${PN}/${P}.tar.gz"
 SLOT="0"
 LICENSE="MIT"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND=""

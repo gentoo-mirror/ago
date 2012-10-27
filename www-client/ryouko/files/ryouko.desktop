@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Ryouko
+GenericName=Ryouko
+Comment=Simple PyQt4 Web Browser
+Icon=ryouko
+Type=Application
+Categories=Network;WebBrowser;
+Exec=ryouko
+StartupNotify=false
+Terminal=false
+MimeType=text/html;text/webviewhtml;text/plain;image/jpeg;image/png;image/bmp;image/x-windows-bmp;image/gif;

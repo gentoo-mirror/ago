@@ -21,3 +21,9 @@ DEPEND=""
 RDEPEND=">=dev-python/PyQt4-4.8.0"
 
 PATCHES=( "${FILESDIR}"/setup.py.patch )
+
+src_install() {
+	distutils-r1_src_install
+	doicon "${FILESDIR}"/${PN}.png
+	domenu "${FILESDIR}"/${PN}.desktop
+}

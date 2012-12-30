@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python2
 # Copyright 2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 

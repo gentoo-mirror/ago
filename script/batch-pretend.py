@@ -130,17 +130,6 @@ if __name__ == "__main__":
 					cvs_path = os.path.join(options.repo, pn)
 					print_and_log('Working in %s...' % cvs_path, log_file)
 
-					# Remove whole directory to prevent problems with conflicts.
-					if os.path.exists(cvs_path):
-						try:
-							shutil.rmtree(cvs_path)
-						except OSError:
-							print '!!! rmtree %s failed' % cvs_path
-							sys.exit(1)
-
-					if run_command(["cvs", "up", pn], options.repo, log_file)[0] != 0:
-						print '!!! cvs up failed'
-						sys.exit(1)
 					if run_command(["ekeyword", options.arch, ebuild_name], cvs_path, log_file)[0] != 0:
 						print '!!! ekeyword failed'
 						sys.exit(1)

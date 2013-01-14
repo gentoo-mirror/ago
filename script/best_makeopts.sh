@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cpufreq-set -g performance -r
+
 PACKAGE="kde-base/kdelibs"
 
 DISTDIR="/tmp/" emerge -f ${PACKAGE}

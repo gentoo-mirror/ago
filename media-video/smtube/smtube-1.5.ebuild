@@ -19,7 +19,8 @@ IUSE=""
 
 DEPEND="x11-libs/qt-core:4
 	x11-libs/qt-gui:4"
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	|| ( media-video/smplayer media-video/mplayer media-video/vlc kde-base/dragon media-video/totem media-video/gnome-mplayer )"
 
 src_prepare() {
 	eqmake4 src/${PN}.pro

@@ -40,6 +40,7 @@ src_compile() {
 }
 
 install_locale() {
+	ebegin "Installing $1 translation"
 	insinto /usr/share/${PN}/translations
 	doins "${S}"/src/translations/${PN}_${1}.qm
 	eend $? || die "failed to install $1 translation"

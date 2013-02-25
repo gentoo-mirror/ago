@@ -27,7 +27,6 @@ src_prepare() {
 }
 
 gen_translation() {
-	ebegin "Generating $1 translation"
 	lrelease ${PN}_${1}.ts
 	eend $? || die "failed to generate $1 translation"
 }
@@ -40,7 +39,6 @@ src_compile() {
 }
 
 install_locale() {
-	ebegin "Installing $1 translation"
 	insinto /usr/share/${PN}/translations
 	doins "${S}"/src/translations/${PN}_${1}.qm
 	eend $? || die "failed to install $1 translation"

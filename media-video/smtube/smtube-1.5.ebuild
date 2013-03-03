@@ -17,8 +17,8 @@ LICENSE="GPL-2+"
 SLOT="0"
 IUSE=""
 
-DEPEND="x11-libs/qt-core:4
-	x11-libs/qt-gui:4"
+DEPEND="dev-qt/qtcore:4
+	dev-qt/qtgui:4"
 RDEPEND="${DEPEND}
 	|| ( media-video/smplayer media-video/mplayer media-video/vlc kde-base/dragon media-video/totem media-video/gnome-mplayer )"
 

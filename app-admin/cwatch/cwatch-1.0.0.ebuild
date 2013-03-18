@@ -10,7 +10,7 @@ DESCRIPTION="A lightweight program that monitors the file system activity"
 HOMEPAGE="https://github.com/joebew42/cwatch"
 SRC_URI="https://github.com/joebew42/${PN}/archive/v${PV}-experimental.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPL-2"
+LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""

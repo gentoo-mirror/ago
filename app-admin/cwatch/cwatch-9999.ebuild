@@ -10,7 +10,7 @@ DESCRIPTION="A lightweight program that monitors the file system activity"
 HOMEPAGE="https://github.com/joebew42/cwatch"
 EGIT_REPO_URI="https://github.com/joebew42/${PN}.git"
 
-LICENSE="GPL-2"
+LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS=""
 IUSE=""

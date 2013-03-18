@@ -4,19 +4,21 @@
 
 EAPI=5
 
-inherit autotools git-2
+inherit autotools
 
 DESCRIPTION="A lightweight program that monitors the file system activity"
 HOMEPAGE="https://github.com/joebew42/cwatch"
-EGIT_REPO_URI="https://github.com/joebew42/${PN}.git"
+SRC_URI="https://github.com/joebew42/${PN}/archive/v${PV}-experimental.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND=""
 RDEPEND=""
+
+S="${WORKDIR}/${P}-experimental"
 
 src_prepare() {
 	eautoreconf

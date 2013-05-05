@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/env python
 # Copyright 2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
@@ -125,7 +125,7 @@ if __name__ == "__main__":
 					continue
 
 				print_and_log('Working on bug %d...' % bug_id, log_file)
-				commit_message = "Stable for %s, wrt bug #%d" % (options.arch, bug_id)
+				commit_message = "Add %s, wrt bug #%d" % (options.arch, bug_id)
 				for (pn, ebuild_name) in stabilization_dict[bug_id]:
 					cvs_path = os.path.join(options.repo, pn)
 					print_and_log('Working in %s...' % cvs_path, log_file)
@@ -146,7 +146,7 @@ if __name__ == "__main__":
 						done_bugs.append(bug_id)
 						save_state(done_bugs)
 						continue
-					if run_command(["repoman", "full"], cvs_path, log_file)[0] != 0:
+					if run_command(["repoman", "commit", "--include-arches", options.arch, "-m", commit_message], cvs_path, log_file)[0] != 0:
 						os.chdir(cvs_path)
 						os.system("repoman full")
 						sys.exit(1)

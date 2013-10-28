@@ -1,0 +1,5 @@
+*uvcdynctrl-0.2.3 (28 Oct 2013)
+
+  28 Oct 2013; Agostino Sarubbo <ago@gentoo.org> +uvcdynctrl-0.2.3.ebuild,
+  -uvcdynctrl-0.2.2.ebuild:
+  Version bump to 0.2.3, remove old.

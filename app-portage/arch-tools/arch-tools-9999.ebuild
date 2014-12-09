@@ -1,10 +1,12 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI=5
 
-inherit git-2
+PYTHON_COMPAT=( python2_7 )
+
+inherit git-2 python-r1
 
 HOMEPAGE="http://git.overlays.gentoo.org/gitweb/?p=proj/arch-tools.git"
 DESCRIPTION="Set of utilities to automate workflow of arch developers"
@@ -19,8 +21,10 @@ IUSE=""
 DEPEND="dev-lang/python"
 RDEPEND="${DEPEND}
 	app-portage/gentoolkit-dev
-	>=www-client/pybugz-0.10"
+	>=www-client/pybugz-0.10[${PYTHON_USEDEP}]"
 
 src_install () {
-	for i in *.py;do newbin ${i} ${i/.py/};done
+	for file in *.py ; do
+		newbin ${file} ${file/.py/}
+	done
 }

@@ -1,2 +1,5 @@
+  10 Dec 2014; Agostino Sarubbo <ago@gentoo.org> arch-tools-9999.ebuild:
+  More python improvements
+
   09 Dec 2014; Agostino Sarubbo <ago@gentoo.org> arch-tools-9999.ebuild:
   Add PYTHON_USEDEP to fix bug #532052

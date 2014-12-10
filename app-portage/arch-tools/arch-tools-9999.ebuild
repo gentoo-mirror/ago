@@ -18,10 +18,12 @@ KEYWORDS=""
 SLOT="0"
 IUSE=""
 
-DEPEND="dev-lang/python"
+DEPEND="${PYTHON_DEPS}"
 RDEPEND="${DEPEND}
 	app-portage/gentoolkit-dev
 	>=www-client/pybugz-0.10[${PYTHON_USEDEP}]"
+
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 src_install () {
 	for file in *.py ; do

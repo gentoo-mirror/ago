@@ -26,7 +26,8 @@ RDEPEND="${DEPEND}
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 src_install () {
-	for file in *.py ; do
+	for file in batch-stabilize.py bugzilla-viewer.py file-stabilization-bugs.py maintainer-timeout.py reverse-dependencies.py stabilization-candidates.py ; do
 		newbin ${file} ${file/.py/}
 	done
+	python_foreach_impl python_domodule common.py
 }

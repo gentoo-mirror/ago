@@ -1,3 +1,6 @@
+  11 Dec 2014; Agostino Sarubbo <ago@gentoo.org> arch-tools-9999.ebuild:
+  Install common.py properly
+
   10 Dec 2014; Agostino Sarubbo <ago@gentoo.org> arch-tools-9999.ebuild:
   More python improvements
 

@@ -1,0 +1,5 @@
+*umplayer-9999 (22 Mar 2013)
+
+  22 Mar 2013; Agostino Sarubbo <ago@gentoo.org> +metadata.xml,
+  +umplayer-9999.ebuild:
+  First draft for umplayer

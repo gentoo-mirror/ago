@@ -1,0 +1,11 @@
+  06 Jan 2015; Agostino Sarubbo <ago@gentoo.org> arch-tools-9999.ebuild:
+  Add python3 support
+
+  11 Dec 2014; Agostino Sarubbo <ago@gentoo.org> arch-tools-9999.ebuild:
+  Install common.py properly
+
+  10 Dec 2014; Agostino Sarubbo <ago@gentoo.org> arch-tools-9999.ebuild:
+  More python improvements
+
+  09 Dec 2014; Agostino Sarubbo <ago@gentoo.org> arch-tools-9999.ebuild:
+  Add PYTHON_USEDEP to fix bug #532052

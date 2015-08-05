@@ -1,0 +1,12 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	python-r1	d9c8348f26710ea523a385c2328cf027	git-2	e28f0d8a9b321431b1e699782851b827	multibuild	6d4858dc00f8bc51caf3f957f8430eb0	eutils	9fb270e417e0e83d64ca52586c4a79de	python-utils-r1	295a286ec27cab6af76b3b75ba07a3a
+_md5_=98fe6aa8a07edb33e1c8f7085e407cb7
+SLOT=0
+DEFINED_PHASES=install unpack
+EAPI=5
+DEPEND=python_targets_python3_3? ( >=dev-lang/python-3.3.2-r2:3.3 ) python_targets_python3_4? ( dev-lang/python:3.4 ) >=dev-lang/python-exec-2:=[python_targets_python3_3(-)?,python_targets_python3_4(-)?,-python_single_target_python3_3(-),-python_single_target_python3_4(-)] dev-vcs/git
+DESCRIPTION=Set of utilities to automate workflow of arch developers
+LICENSE=GPL-2
+IUSE=python_targets_python3_3 python_targets_python3_4
+REQUIRED_USE=|| ( python_targets_python3_3 python_targets_python3_4 )
+HOMEPAGE=http://git.overlays.gentoo.org/gitweb/?p=proj/arch-tools.git
+RDEPEND=python_targets_python3_3? ( >=dev-lang/python-3.3.2-r2:3.3 ) python_targets_python3_4? ( dev-lang/python:3.4 ) >=dev-lang/python-exec-2:=[python_targets_python3_3(-)?,python_targets_python3_4(-)?,-python_single_target_python3_3(-),-python_single_target_python3_4(-)] app-portage/gentoolkit-dev >=www-client/pybugz-0.10[python_targets_python3_3(-)?,python_targets_python3_4(-)?,-python_single_target_python3_3(-),-python_single_target_python3_4(-)]

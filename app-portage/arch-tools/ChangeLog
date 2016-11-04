@@ -1,3 +1,6 @@
+  04 Nov 2016; Agostino Sarubbo <ago@gentoo.org> arch-tools-9999.ebuild:
+  app-portage/arch-tools: update HOMEPAGE/EGIT_REPO_URI
+
   04 Nov 2016; Agostino Sarubbo <ago@gentoo.org> metadata.xml:
   update metadata.xml
 

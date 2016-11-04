@@ -1,3 +1,6 @@
+  04 Nov 2016; Agostino Sarubbo <ago@gentoo.org> metadata.xml:
+  update metadata.xml
+
 *smtube-1.8 (02 Feb 2014)
 
   02 Feb 2014; Agostino Sarubbo <ago@gentoo.org> +smtube-1.8.ebuild:

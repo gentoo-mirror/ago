@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -12,7 +12,7 @@ SRC_URI="http://www.pps.univ-paris-diderot.fr/~jch/software/files/${P}.tar.gz"
 
 KEYWORDS="~amd64 ~x86"
 IUSE=""
-LICENSE="as-is"
+LICENSE="GPL-2"
 SLOT="0"
 
 DEPEND=""

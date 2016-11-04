@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -8,9 +8,9 @@ PYTHON_COMPAT=( python3_3 python3_4 )
 
 inherit git-2 python-r1
 
-HOMEPAGE="http://git.overlays.gentoo.org/gitweb/?p=proj/arch-tools.git"
+HOMEPAGE="https://gitweb.gentoo.org/proj/arch-tools.git"
 DESCRIPTION="Set of utilities to automate workflow of arch developers"
-EGIT_REPO_URI="git://git.overlays.gentoo.org/proj/${PN}.git"
+EGIT_REPO_URI="git://anongit.gentoo.org/proj/${PN}.git"
 EGIT_BRANCH="master"
 
 LICENSE="GPL-2"

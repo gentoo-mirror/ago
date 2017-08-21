@@ -1,0 +1,5 @@
+*grsecurity-sources-4.9.44 (21 Aug 2017)
+
+  21 Aug 2017; Agostino Sarubbo <ago@gentoo.org>
+  +grsecurity-sources-4.9.44.ebuild, +metadata.xml:
+  sys-kernel/grsecurity-sources: Initial commit

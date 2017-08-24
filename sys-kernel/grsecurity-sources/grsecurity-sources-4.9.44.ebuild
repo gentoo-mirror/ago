@@ -17,7 +17,7 @@ SRC_URI="${KERNEL_URI} ${GRSECURITY_URI} ${ARCH_URI}"
 
 UNIPATCH_LIST="${DISTDIR}/${PN}-extras-${PV}.tar.xz"
 
-DESCRIPTION="Unofficial port of the latest grsecurity patch plus Gentoo patchset"
+DESCRIPTION="Unofficial port of the last public grsecurity patch plus Gentoo patchset"
 HOMEPAGE="https://github.com/minipli/linux-unofficial_grsec"
 IUSE="deblob"
 KEYWORDS="-* ~amd64"

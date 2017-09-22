@@ -1,3 +1,9 @@
+*grsecurity-sources-4.9.51 (21 Sep 2017)
+
+  21 Sep 2017; Agostino Sarubbo <ago@gentoo.org>
+  +grsecurity-sources-4.9.51.ebuild:
+  sys-kernel/grsecurity-sources: Automated version bump to 4.9.51
+
 *grsecurity-sources-4.9.50 (15 Sep 2017)
 
   15 Sep 2017; Agostino Sarubbo <ago@gentoo.org>

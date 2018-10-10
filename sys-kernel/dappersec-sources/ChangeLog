@@ -1,0 +1,5 @@
+*dappersec-sources-4.9.131 (10 Oct 2018)
+
+  10 Oct 2018;  <ago@gentoo.org> +dappersec-sources-4.9.131.ebuild,
+  +metadata.xml:
+  sys-kernel/dappersec-sources: initial commit

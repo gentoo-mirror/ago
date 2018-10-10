@@ -17,7 +17,7 @@ SRC_URI="${KERNEL_URI} ${GRSECURITY_URI} ${ARCH_URI}"
 
 UNIPATCH_LIST="${DISTDIR}/${PN}-${PV}.tar.xz"
 
-DESCRIPTION="Unofficial port of the last public grsecurity patch plus Gentoo patchset"
+DESCRIPTION="Dapper's version of the last public grsecurity patch plus Gentoo patchset"
 HOMEPAGE="https://github.com/dapperlinux/dapper-secure-kernel-patchset-stable"
 IUSE="deblob"
 KEYWORDS="-* ~amd64"
@@ -35,5 +35,17 @@ pkg_postinst() {
 	ewarn "prior to booting a ${PF} kernel for the first time:"
 	ewarn
 	ewarn "emerge -na =${GRADM_COMPAT}"
+	ewarn
+
+	ewarn
+	ewarn "From: https://github.com/dapperlinux/dapper-secure-kernel-patchset-stable/releases :"
+	ewarn
+	ewarn "WARNING: Meltdown and Spectre fixes have been OMITTED from this patchset."
+	ewarn "Reptoline is also OMITTED. This patchset works with all other fixes included at this patchlevel."
+	ewarn "If you are not comfortable with being vulnerable to meltdown and spectre, then use an upstream kernel."
+	ewarn "If you are still using the 4.9.74 patchset or later, and still wish to get the latest fixes, then use this patchset."
+	ewarn "Meltdown and Spectre fixes are proving to be extremely difficult to get this patchset booting."
+	ewarn "There might be a small chance that they will be included in the future, and I will let you know."
+	ewarn "Until then, assume that it will be months / years / never."
 	ewarn
 }

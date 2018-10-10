@@ -1,3 +1,11 @@
+*grsecurity-sources-4.9.74-r1 (10 Oct 2018)
+
+  10 Oct 2018;  <ago@gentoo.org> +grsecurity-sources-4.9.74-r1.ebuild:
+  sys-kernel/grsecurity-sources: false bump to let users know about dappersec-
+  sources. grsecurity-sources and dappersec-sources are two different packages
+  and we don't know if in the future there will be activities for grsecurity-
+  sources, so rename the package is not a good idea
+
 *grsecurity-sources-4.9.74 (04 Jan 2018)
 
   04 Jan 2018; Agostino Sarubbo <ago@gentoo.org>

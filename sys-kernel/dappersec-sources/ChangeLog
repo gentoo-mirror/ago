@@ -1,3 +1,8 @@
+*dappersec-sources-4.9.132 (15 Oct 2018)
+
+  15 Oct 2018;  <ago@gentoo.org> +dappersec-sources-4.9.132.ebuild:
+  sys-kernel/dappersec-sources: version bump to 4.9.132
+
   10 Oct 2018;  <ago@gentoo.org> dappersec-sources-4.9.131.ebuild:
   sys-kernel/dappersec-sources: fix HOMEPAGE/DESCRIPTION, add the ewarn about
   the absence of Meltdown and Spectre fixes

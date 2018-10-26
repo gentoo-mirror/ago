@@ -1,3 +1,8 @@
+*dappersec-sources-4.9.135 (26 Oct 2018)
+
+  26 Oct 2018;  <ago@gentoo.org> +dappersec-sources-4.9.135.ebuild:
+  sys-kernel/dappersec-sources: version bump to 4.9.135
+
 *dappersec-sources-4.9.132 (15 Oct 2018)
 
   15 Oct 2018;  <ago@gentoo.org> +dappersec-sources-4.9.132.ebuild:

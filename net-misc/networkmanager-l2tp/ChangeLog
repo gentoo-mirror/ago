@@ -1,8 +1,0 @@
-  04 Nov 2016; Agostino Sarubbo <ago@gentoo.org> metadata.xml:
-  update metadata.xml
-
-*networkmanager-l2tp-0.9.6 (23 Aug 2013)
-
-  23 Aug 2013; Agostino Sarubbo <ago@gentoo.org> +metadata.xml,
-  +networkmanager-l2tp-0.9.6.ebuild:
-  networkmanager-l2tp first commit

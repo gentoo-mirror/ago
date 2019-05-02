@@ -1,0 +1,5 @@
+*uniloader-0.6.0 (02 May 2019)
+
+  02 May 2019; Agostino Sarubbo <ago@gentoo.org> +files/uniloader.confd,
+  +files/uniloader.initd, +metadata.xml, +uniloader-0.6.0.ebuild:
+  app-metrics/uniloader: First commit for queuemetrics/uniloader

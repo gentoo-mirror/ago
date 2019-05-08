@@ -1,3 +1,7 @@
+  08 May 2019; Agostino Sarubbo <ago@gentoo.org> +files/25queuemetrics,
+  queuemetrics-19.04.1.ebuild:
+  app-metrics/queuemetrics: keep configuration files
+
 *queuemetrics-19.04.1 (02 May 2019)
 
   02 May 2019; Agostino Sarubbo <ago@gentoo.org> +files/queuemetrics.confd,

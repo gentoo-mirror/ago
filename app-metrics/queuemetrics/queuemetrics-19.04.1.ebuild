@@ -52,4 +52,6 @@ src_install() {
 
 	newconfd "${FILESDIR}/${PN}.confd" ${PN}
 	newinitd "${FILESDIR}/${PN}.initd" ${PN}
+
+	doenvd "${FILESDIR}/25${PN}"
 }

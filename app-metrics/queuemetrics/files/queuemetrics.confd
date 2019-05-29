@@ -31,4 +31,5 @@ JAVA_OPTS="-server \
            -XX:HeapDumpPath=/opt/queuemetrics/tomcat/logs/hprof.hprof \
            -Dorg.apache.catalina.connector.RECYCLE_FACADES=true \
            -Dorg.apache.catalina.core.StandardHostValve.ACCESS_SESSION=true \
+           -Djava.net.preferIPv4Stack=true \
 "

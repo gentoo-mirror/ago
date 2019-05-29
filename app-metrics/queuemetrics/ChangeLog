@@ -1,3 +1,6 @@
+  29 May 2019; Agostino Sarubbo <ago@gentoo.org> files/queuemetrics.confd:
+  app-metrics/queuemetrics: prefer ipv4 over ipv6
+
   08 May 2019; Agostino Sarubbo <ago@gentoo.org> +files/25queuemetrics,
   queuemetrics-19.04.1.ebuild:
   app-metrics/queuemetrics: keep configuration files

@@ -30,8 +30,6 @@ stop() {
 	start-stop-daemon \
 				--stop \
 				--quiet \
-				--stdout ${CATALINA_HOME}/logs/catalina.out \
-				--stderr ${CATALINA_HOME}/logs/catalina.out \
 				--retry=60 \
 				--pidfile ${PIDFILE} \
 				--exec java \

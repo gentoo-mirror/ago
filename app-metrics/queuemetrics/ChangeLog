@@ -1,3 +1,8 @@
+*queuemetrics-19.04.3 (16 Jun 2019)
+
+  16 Jun 2019; Agostino Sarubbo <ago@gentoo.org> +queuemetrics-19.04.3.ebuild:
+  app-metrics/queuemetrics: version bump to 19.04.3
+
   15 Jun 2019; Agostino Sarubbo <ago@gentoo.org> files/queuemetrics.initd:
   app-metrics/queuemetrics: Fix init script: --stdout and --stderr are only
   relevant with --start

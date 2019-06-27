@@ -1,3 +1,7 @@
+  27 Jun 2019; Agostino Sarubbo <ago@gentoo.org> files/queuemetrics.initd:
+  app-metrics/queuemetrics: we don't need to instance 1GB of ram to shutdown
+  tomcat, so overwrite xms and xmx in the stop function
+
 *queuemetrics-19.04.3 (16 Jun 2019)
 
   16 Jun 2019; Agostino Sarubbo <ago@gentoo.org> +queuemetrics-19.04.3.ebuild:

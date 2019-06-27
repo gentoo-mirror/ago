@@ -35,6 +35,7 @@ stop() {
 				--exec java \
 				-- \
 					${JAVA_OPTS} \
+					-Xms64m -Xmx64m \
 					org.apache.catalina.startup.Bootstrap \
 					stop
 	sleep 5

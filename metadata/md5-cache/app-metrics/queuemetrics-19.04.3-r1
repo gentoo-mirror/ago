@@ -1,0 +1,14 @@
+DEFINED_PHASES=install setup
+DESCRIPTION=A monitoring and reporting suite for asterisk based PBX
+EAPI=7
+HOMEPAGE=https://www.queuemetrics.com
+IUSE=+mysql uniloader
+KEYWORDS=~amd64
+LICENSE=all-rights-reserved
+PDEPEND=mysql? ( virtual/mysql[server] ) uniloader? ( app-metrics/uniloader )
+RDEPEND=virtual/jdk:1.8
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.42/bin/apache-tomcat-8.5.42.tar.gz http://downloads.loway.ch/qm/QueueMetrics-19.04.3.tar.gz
+_eclasses_=user	e68863263b1e8611dacf381bec5c8b2b
+_md5_=b4448a8487f1140be7abf375f55b79b3

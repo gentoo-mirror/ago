@@ -1,3 +1,11 @@
+*queuemetrics-19.04.3-r1 (03 Jul 2019)
+
+  03 Jul 2019; Agostino Sarubbo <ago@gentoo.org> +files/server.xml,
+  +queuemetrics-19.04.3-r1.ebuild, files/25queuemetrics:
+  app-metrics/queuemetrics: install a custom server.xml, protect server.xml via
+  env.d, add a way and an ewarn about the tomcat update, remove the ewarn about
+  the restart, update tomcat to 8.5.42
+
   28 Jun 2019; Agostino Sarubbo <ago@gentoo.org> queuemetrics-19.04.1.ebuild,
   queuemetrics-19.04.3.ebuild:
   app-metrics/queuemetrics: use apache-tomcat official mirror

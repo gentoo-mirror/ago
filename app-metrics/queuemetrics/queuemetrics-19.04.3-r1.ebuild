@@ -14,7 +14,7 @@ DESCRIPTION="A monitoring and reporting suite for asterisk based PBX"
 HOMEPAGE="https://www.queuemetrics.com"
 LICENSE="all-rights-reserved"
 SRC_URI="https://archive.apache.org/dist/tomcat/tomcat-8/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz \
-	http://downloads.loway.ch/qm/QueueMetrics-${PV}.tar.gz"
+	https://downloads.loway.ch/qm/QueueMetrics-${PV}.tar.gz"
 RESTRICT="mirror"
 SLOT="0"
 KEYWORDS="~amd64"

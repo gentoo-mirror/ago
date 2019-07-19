@@ -1,3 +1,10 @@
+*queuemetrics-19.04.3-r2 (19 Jul 2019)
+
+  19 Jul 2019; Agostino Sarubbo <ago@gentoo.org> +files/queuemetrics.service,
+  +files/queuemetrics.service.conf, +files/queuemetrics.socket,
+  +queuemetrics-19.04.3-r2.ebuild, files/queuemetrics.initd:
+  app-metrics/queuemetrics: support systemd, tomcat bump
+
   11 Jul 2019; Agostino Sarubbo <ago@gentoo.org> -queuemetrics-19.04.1.ebuild,
   -queuemetrics-19.04.3.ebuild, queuemetrics-19.04.3-r1.ebuild:
   app-metrics/queuemetrics: use https mirror, remove old

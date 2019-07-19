@@ -5,7 +5,7 @@
 PIDFILE="/run/queuemetrics.pid"
 
 start() {
-	ebegin "Starting queuemetrics"
+	ebegin "Starting QueueMetrics"
 	start-stop-daemon \
 				--start \
 				--quiet \
@@ -26,7 +26,7 @@ start() {
 stop() {
 	MYPID="$( cat ${PIDFILE} )"
 
-	ebegin "Stopping queuemetrics"
+	ebegin "Stopping QueueMetrics"
 	start-stop-daemon \
 				--stop \
 				--quiet \

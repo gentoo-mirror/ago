@@ -7,5 +7,5 @@ LICENSE=all-rights-reserved
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://downloads.loway.ch/qm/uniloader-0.6.0.tar.gz
-_eclasses_=user	e68863263b1e8611dacf381bec5c8b2b
+_eclasses_=user	b3c37f3375252e9ac4c6a157df4e595c
 _md5_=82adc44512f00f444d3cdaa2fc69e7b6

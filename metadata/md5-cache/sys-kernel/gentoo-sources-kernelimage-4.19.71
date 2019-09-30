@@ -1,0 +1,11 @@
+DEFINED_PHASES=install setup
+DESCRIPTION=A 'genkernel all' kernel image compiled on gentoo-sources
+EAPI=7
+HOMEPAGE=https://www.gentoo.org
+KEYWORDS=-* ~amd64
+LICENSE=GPL-2
+RDEPEND=sys-kernel/linux-firmware
+RESTRICT=strip
+SLOT=4.19.71
+SRC_URI=https://dev.gentoo.org/~ago/distfiles/gentoo-sources-kernelimage/gentoo-sources-kernelimage-4.19.71.tar.xz
+_md5_=45bc0af7a28dd2262cd7898c25569b83

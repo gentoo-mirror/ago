@@ -1,3 +1,8 @@
+*uniloader-0.6.6 (01 Oct 2019)
+
+  01 Oct 2019; Agostino Sarubbo <ago@gentoo.org> +uniloader-0.6.6.ebuild:
+  app-metrics/uniloader: Version bump to 0.6.6
+
 *uniloader-0.6.5 (04 Sep 2019)
 
   04 Sep 2019; Agostino Sarubbo <ago@gentoo.org> +uniloader-0.6.5.ebuild:

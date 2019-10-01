@@ -1,7 +1,7 @@
 app-admin/cwatch 1.0.0 1.0.1 1.2.0 1.2.2 9999: A lightweight program that monitors the file system activity
 app-forensics/bonesi 0.2.0: The DDoS Botnet Simulator
 app-metrics/queuemetrics 19.04.3-r1 19.04.3-r2: A monitoring and reporting suite for asterisk based PBX
-app-metrics/uniloader 0.6.0 0.6.5: A go-based program that uploads data to a local or remote QueueMetrics
+app-metrics/uniloader 0.6.0 0.6.5 0.6.6: A go-based program that uploads data to a local or remote QueueMetrics
 media-video/uvccapture 0.5: Take a photo from webcam on your shell
 media-video/uvcdynctrl 0.2.3 0.2.4: Manage dynamic controls in uvcvideo
 net-analyzer/logkeys 9999: a GNU/Linux keylogger that works!

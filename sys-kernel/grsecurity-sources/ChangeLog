@@ -1,3 +1,15 @@
+  04 Oct 2019; Agostino Sarubbo <ago@gentoo.org>
+  -grsecurity-sources-4.9.44.ebuild, -grsecurity-sources-4.9.48.ebuild,
+  -grsecurity-sources-4.9.49.ebuild, -grsecurity-sources-4.9.50.ebuild,
+  -grsecurity-sources-4.9.51.ebuild, -grsecurity-sources-4.9.52.ebuild,
+  -grsecurity-sources-4.9.53.ebuild, -grsecurity-sources-4.9.54.ebuild,
+  -grsecurity-sources-4.9.56.ebuild, -grsecurity-sources-4.9.58.ebuild,
+  -grsecurity-sources-4.9.59.ebuild, -grsecurity-sources-4.9.64.ebuild,
+  -grsecurity-sources-4.9.65.ebuild, -grsecurity-sources-4.9.67.ebuild,
+  -grsecurity-sources-4.9.68.ebuild, -grsecurity-sources-4.9.72.ebuild,
+  -grsecurity-sources-4.9.73.ebuild:
+  sys-kernel/grsecurity-sources: Remove old
+
 *grsecurity-sources-4.9.74-r1 (10 Oct 2018)
 
   10 Oct 2018;  <ago@gentoo.org> +grsecurity-sources-4.9.74-r1.ebuild:

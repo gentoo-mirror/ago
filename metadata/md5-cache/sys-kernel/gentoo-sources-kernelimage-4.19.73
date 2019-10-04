@@ -8,4 +8,4 @@ RDEPEND=sys-kernel/linux-firmware
 RESTRICT=strip
 SLOT=4.19.73
 SRC_URI=https://dev.gentoo.org/~ago/distfiles/gentoo-sources-kernelimage/gentoo-sources-kernelimage-4.19.73.tar.xz
-_md5_=45bc0af7a28dd2262cd7898c25569b83
+_md5_=98e322a5a2f4f41175eca3a882817bd4

@@ -30,7 +30,7 @@ pkg_setup() {
 src_install() {
 	dodir /boot /lib/modules
 	cp *genkernel* "${D}"/boot/ || die
-	cp -r "${PV}"-gentoo "${D}"/lib/modules/ || die
+	cp -r "${PV}"-"${PN}" "${D}"/lib/modules/ || die
 	insinto /usr/share/doc/${PF}
 	doins "${FILESDIR}"/bashrc
 }

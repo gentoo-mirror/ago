@@ -1,3 +1,7 @@
+  11 Oct 2019; Agostino Sarubbo <ago@gentoo.org>
+  +gentoo-sources-kernelimage-4.19.74:
+  sys-kernel/gentoo-sources-kernelimage: version bump to 4.19.74
+
   04 Oct 2019; Agostino Sarubbo <ago@gentoo.org>
   gentoo-sources-kernelimage-4.19.73.ebuild:
   sys-kernel/gentoo-sources-kernelimage: fix cp

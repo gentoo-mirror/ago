@@ -1,6 +1,6 @@
 app-admin/cwatch 1.0.0 1.0.1 1.2.0 1.2.2 9999: A lightweight program that monitors the file system activity
 app-forensics/bonesi 0.2.0: The DDoS Botnet Simulator
-app-metrics/queuemetrics 19.04.3-r1 19.04.3-r2: A monitoring and reporting suite for asterisk based PBX
+app-metrics/queuemetrics 19.04.3-r1 19.04.3-r2 19.10.1: A monitoring and reporting suite for asterisk based PBX
 app-metrics/uniloader 0.6.0 0.6.5 0.6.6 0.6.7: A go-based program that uploads data to a local or remote QueueMetrics
 media-video/uvccapture 0.5: Take a photo from webcam on your shell
 media-video/uvcdynctrl 0.2.3 0.2.4: Manage dynamic controls in uvcvideo
@@ -8,5 +8,5 @@ net-analyzer/logkeys 9999: a GNU/Linux keylogger that works!
 net-analyzer/slowhttptest 1.5: Application Layer DoS attack simulator
 net-analyzer/thc-ssl-dos 1.4: Tool to DoS
 sys-kernel/dappersec-sources 4.9.135: Dapper's version of the last public grsecurity patch plus Gentoo patchset
-sys-kernel/gentoo-sources-kernelimage 4.19.71 4.19.72 4.19.73 4.19.74: A 'genkernel all' kernel image compiled on gentoo-sources
+sys-kernel/gentoo-sources-kernelimage 4.19.79: A 'genkernel all' kernel image compiled on gentoo-sources
 sys-kernel/grsecurity-sources 4.9.74 4.9.74-r1: Unofficial port of the last public grsecurity patch plus Gentoo patchset

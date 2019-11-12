@@ -51,7 +51,7 @@ src_install() {
 	insinto /opt/${PN}/tomcat
 	doins -r apache-tomcat-${TOMCAT_VERSION}/{bin,conf,lib}
 
-	cp ${FILESDIR}/server.xml "${D}"/opt/${PN}/tomcat/conf/
+	cp "${FILESDIR}/server.xml" "${D}"/opt/${PN}/tomcat/conf/
 
 	fowners -R ${PN}:${PN} /opt/${PN}
 	fperms 0750 /opt/${PN}

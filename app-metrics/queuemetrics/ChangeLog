@@ -1,3 +1,9 @@
+  12 Nov 2019; Agostino Sarubbo <ago@gentoo.org>
+  -queuemetrics-19.04.3-r1.ebuild, -queuemetrics-19.04.3-r2.ebuild,
+  -queuemetrics-19.10.1.ebuild, -queuemetrics-19.10.2.ebuild,
+  queuemetrics-19.10.3.ebuild:
+  app-metrics/queuemetrics: remove old
+
 *queuemetrics-19.10.3 (12 Nov 2019)
 
   12 Nov 2019; Agostino Sarubbo <ago@gentoo.org> +queuemetrics-19.10.3.ebuild:

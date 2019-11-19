@@ -1,11 +1,12 @@
-DEFINED_PHASES=install setup
+DEFINED_PHASES=install postinst postrm preinst prerm pretend setup
 DESCRIPTION=A 'genkernel all' kernel image compiled on gentoo-sources
 EAPI=7
 HOMEPAGE=https://www.gentoo.org
 KEYWORDS=-* ~amd64
 LICENSE=GPL-2
 RDEPEND=sys-kernel/linux-firmware
-RESTRICT=strip
+RESTRICT=binchecks strip
 SLOT=4.19.79
 SRC_URI=https://dev.gentoo.org/~ago/distfiles/gentoo-sources-kernelimage/gentoo-sources-kernelimage-4.19.79.tar.xz
-_md5_=98e322a5a2f4f41175eca3a882817bd4
+_eclasses_=mount-boot	0ed73d6bc7399be07e136b5dc46709d9
+_md5_=205c0bbb3c017fb9a0bf4652487d35f7

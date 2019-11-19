@@ -3,6 +3,8 @@
 
 EAPI=7
 
+inherit mount-boot
+
 DESCRIPTION="A 'genkernel all' kernel image compiled on gentoo-sources"
 HOMEPAGE="https://www.gentoo.org"
 SRC_URI="https://dev.gentoo.org/~ago/distfiles/${PN}/${P}.tar.xz"
@@ -11,16 +13,14 @@ LICENSE="GPL-2"
 SLOT="${PVR}"
 KEYWORDS="-* ~amd64"
 RDEPEND="sys-kernel/linux-firmware"
-RESTRICT="strip"
+RESTRICT="binchecks strip"
 
 pkg_setup() {
 	if [[ ${MERGE_TYPE} != buildonly ]]
 	then
 		ewarn
 		ewarn
-		ewarn "If you have a separate BOOT partition, is highly recommended to configure a portage HOOK."
-		ewarn "This is needed because the boot partition needs to be mounted and umounted."
-		ewarn "You may also, want to configure your bootloader."
+		ewarn "You may want to configure your bootloader by setting a portage HOOK (/etc/portage/bashrc)."
 		ewarn "A valid example is available into /usr/share/doc/${PF}/bashrc.bz2"
 		ewarn
 		ewarn
@@ -28,9 +28,12 @@ pkg_setup() {
 }
 
 src_install() {
-	dodir /boot /lib/modules
-	cp *genkernel* "${D}"/boot/ || die
-	cp -r "${PV}"-"${PN}" "${D}"/lib/modules/ || die
+	insinto /boot
+	doins *genkernel*
+
+	insinto /lib/modules
+	doins -r "${PV}"-gentoo
+
 	insinto /usr/share/doc/${PF}
 	doins "${FILESDIR}"/bashrc
 }

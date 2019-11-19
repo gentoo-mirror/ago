@@ -1,3 +1,11 @@
+  19 Nov 2019; Agostino Sarubbo <ago@gentoo.org>
+  gentoo-sources-kernelimage-4.19.79.ebuild:
+  sys-kernel/gentoo-sources-kernelimage: remove symbolik link
+
+  19 Nov 2019; Agostino Sarubbo <ago@gentoo.org> files/bashrc,
+  gentoo-sources-kernelimage-4.19.79.ebuild:
+  sys-kernel/gentoo-sources-kernelimage: use mount-boot eclass, fix bashrc
+
 *gentoo-sources-kernelimage-4.19.79 (21 Oct 2019)
 
   21 Oct 2019; Agostino Sarubbo <ago@gentoo.org>

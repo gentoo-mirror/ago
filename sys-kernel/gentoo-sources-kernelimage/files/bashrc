@@ -1,29 +1,15 @@
-function post_pkg_postinst() {
+# FOR THE FIRST MERGE
+function pre_pkg_postinst() {
+	if [ "${CATEGORY}"/"${PN}" = "sys-kernel/gentoo-sources-kernelimage" ] && [ -z "${REPLACING_VERSIONS}" ]
+	then
+		grub2-mkconfig -o /boot/grub/grub.cfg || die
+	fi
+}
+
+# FOR THE SUCCESSIVE MERGES OR UNMERGE
+function pre_pkg_postrm() {
 	if [ "${CATEGORY}"/"${PN}" = "sys-kernel/gentoo-sources-kernelimage" ]
 	then
 		grub2-mkconfig -o /boot/grub/grub.cfg || die
-		umount /boot || die
-	fi
-}
-
-function pre_pkg_preinst() {
-	if [ "${CATEGORY}"/"${PN}" = "sys-kernel/gentoo-sources-kernelimage" ]
-	then
-		mount /boot || die
-	fi
-}
-
-function pre_pkg_prerm() {
-	if [ "${CATEGORY}"/"${PN}" = "sys-kernel/gentoo-sources-kernelimage" ]
-	then
-		mount /boot || die
-	fi
-}
-
-function post_pkg_postrm() {
-	if [ "${CATEGORY}"/"${PN}" = "sys-kernel/gentoo-sources-kernelimage" ]
-	then
-		grub2-mkconfig -o /boot/grub/grub.cfg || die
-		umount /boot || die
 	fi
 }

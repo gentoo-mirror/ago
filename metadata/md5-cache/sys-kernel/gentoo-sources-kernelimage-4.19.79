@@ -9,4 +9,4 @@ RESTRICT=binchecks strip
 SLOT=4.19.79
 SRC_URI=https://dev.gentoo.org/~ago/distfiles/gentoo-sources-kernelimage/gentoo-sources-kernelimage-4.19.79.tar.xz
 _eclasses_=mount-boot	0ed73d6bc7399be07e136b5dc46709d9
-_md5_=205c0bbb3c017fb9a0bf4652487d35f7
+_md5_=731c531587ce634dfc24a85000743411

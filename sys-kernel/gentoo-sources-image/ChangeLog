@@ -1,0 +1,6 @@
+*gentoo-sources-image-4.19.84 (20 Nov 2019)
+
+  20 Nov 2019; Agostino Sarubbo <ago@gentoo.org> +files/bashrc,
+  +gentoo-sources-image-4.19.84.ebuild, +metadata.xml:
+  sys-kernel/gentoo-sources-image: first commit, renamed from sys-kernel/gentoo-
+  sources-kernelimage

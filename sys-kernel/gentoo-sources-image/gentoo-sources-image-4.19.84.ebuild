@@ -31,11 +31,11 @@ src_install() {
 	insinto /boot
 	doins *genkernel*
 
-	rm "${D}"/lib/modules/"${PV}"-gentoo/{build,source} || die
+	rm "${PV}"-"${PN}"/{build,source} || die
 
 	insinto /lib/modules
-	doins -r "${PV}"-gentoo
+	doins -r "${PV}"-"${PN}"
 
-	insinto /usr/share/doc/${PF}
+	insinto /usr/share/doc/"${PF}"
 	doins "${FILESDIR}"/bashrc
 }

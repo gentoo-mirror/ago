@@ -8,5 +8,6 @@ net-analyzer/logkeys 9999: a GNU/Linux keylogger that works!
 net-analyzer/slowhttptest 1.5: Application Layer DoS attack simulator
 net-analyzer/thc-ssl-dos 1.4: Tool to DoS
 sys-kernel/dappersec-sources 4.9.135: Dapper's version of the last public grsecurity patch plus Gentoo patchset
+sys-kernel/gentoo-sources-image 4.19.84: A 'genkernel all' kernel image compiled on gentoo-sources
 sys-kernel/gentoo-sources-kernelimage 4.19.79: A 'genkernel all' kernel image compiled on gentoo-sources
 sys-kernel/grsecurity-sources 4.9.74 4.9.74-r1: Unofficial port of the last public grsecurity patch plus Gentoo patchset

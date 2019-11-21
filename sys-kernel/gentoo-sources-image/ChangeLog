@@ -1,3 +1,7 @@
+  21 Nov 2019; Agostino Sarubbo <ago@gentoo.org>
+  gentoo-sources-image-4.19.84.ebuild:
+  sys-kernel/gentoo-sources-image: Add note, remove the genkernel word
+
   20 Nov 2019; Agostino Sarubbo <ago@gentoo.org>
   gentoo-sources-image-4.19.84.ebuild:
   sys-kernel/gentoo-sources-image: fix path

@@ -37,7 +37,7 @@ pkg_setup() {
 
 src_install() {
 	insinto /boot
-	doins *genkernel*
+	doins *"${PN}"
 
 	rm "${PV}"-"${PN}"/{build,source} || die
 

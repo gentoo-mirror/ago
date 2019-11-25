@@ -1,3 +1,7 @@
+  25 Nov 2019; Agostino Sarubbo <ago@gentoo.org>
+  -gentoo-sources-image-4.19.85.ebuild:
+  sys-kernel/gentoo-sources-image: remove old
+
 *gentoo-sources-image-4.19.86 (25 Nov 2019)
 
   25 Nov 2019; Agostino Sarubbo <ago@gentoo.org>

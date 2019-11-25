@@ -1,3 +1,9 @@
+*gentoo-sources-image-4.19.86 (25 Nov 2019)
+
+  25 Nov 2019; Agostino Sarubbo <ago@gentoo.org>
+  +gentoo-sources-image-4.19.86.ebuild:
+  sys-kernel/gentoo-sources-image: version bump to 4.19.86
+
   22 Nov 2019; Agostino Sarubbo <ago@gentoo.org>
   -gentoo-sources-image-4.19.84.ebuild:
   sys-kernel/gentoo-sources-image: remove old

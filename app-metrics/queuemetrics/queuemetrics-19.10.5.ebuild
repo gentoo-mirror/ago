@@ -8,7 +8,7 @@ EAPI=7
 
 inherit user systemd
 
-TOMCAT_VERSION="8.5.47"
+TOMCAT_VERSION="8.5.50"
 
 DESCRIPTION="A monitoring and reporting suite for asterisk based PBX"
 HOMEPAGE="https://www.queuemetrics.com"

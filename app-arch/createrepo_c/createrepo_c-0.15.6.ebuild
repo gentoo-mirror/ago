@@ -12,7 +12,7 @@ inherit cmake cmake-utils
 
 DESCRIPTION="C implementation of createrepo"
 HOMEPAGE="https://github.com/rpm-software-management/createrepo_c"
-SRC_URI="https://github.com/rpm-software-management/${PN}/archive/{PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/rpm-software-management/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"

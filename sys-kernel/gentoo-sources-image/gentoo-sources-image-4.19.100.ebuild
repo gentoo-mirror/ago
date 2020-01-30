@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # NOTE:
@@ -37,12 +37,12 @@ pkg_setup() {
 
 src_install() {
 	insinto /boot
-	doins *"${PN}"
+	doins *-"${PV}"*
 
-	rm "${PV}"-"${PN}"/{build,source} || die
+	rm "${PV}"-"${PN}"-x86_64/{build,source} || die
 
 	insinto /lib/modules
-	doins -r "${PV}"-"${PN}"
+	doins -r "${PV}"-"${PN}"-x86_64
 
 	insinto /usr/share/doc/"${PF}"
 	doins "${FILESDIR}"/bashrc

@@ -6,9 +6,9 @@
 
 EAPI=7
 
-inherit user systemd
+inherit systemd
 
-TOMCAT_VERSION="8.5.50"
+TOMCAT_VERSION="8.5.51"
 
 DESCRIPTION="A monitoring and reporting suite for asterisk based PBX"
 HOMEPAGE="https://www.queuemetrics.com"
@@ -20,16 +20,16 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="+mysql uniloader"
 
-RDEPEND="virtual/jdk:1.8"
+
+RDEPEND="acct-group/queuemetrics
+	acct-user/queuemetrics
+	virtual/jdk:1.8"
 PDEPEND="mysql? ( virtual/mysql[server] )
 	uniloader? ( app-metrics/uniloader )"
 
 S="${WORKDIR}"
 
 pkg_setup() {
-	enewgroup ${PN}
-	enewuser ${PN} -1 -1 -1 ${PN}
-
 	if [ "$( cat /opt/queuemetrics/tomcat/VERSION )" != "${TOMCAT_VERSION}" ]
 	then
 		ewarn

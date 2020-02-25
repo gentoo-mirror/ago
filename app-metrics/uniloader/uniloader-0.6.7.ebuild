@@ -1,12 +1,10 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # DISCLAIMER:
 # This ebuild does NOT follow the Gentoo QA Rules, instead it follows the upstream way to install and run the application
 
 EAPI=7
-
-inherit user
 
 DESCRIPTION="A go-based program that uploads data to a local or remote QueueMetrics"
 HOMEPAGE="https://www.queuemetrics-live.com/uniloader.jsp"
@@ -17,10 +15,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-pkg_setup() {
-	enewgroup queuemetrics
-	enewuser queuemetrics -1 -1 -1 queuemetrics
-}
+RDEPEND="acct-group/queuemetrics
+	acct-user/queuemetrics"
 
 src_install() {
 	dodir /opt/${PN}/bin

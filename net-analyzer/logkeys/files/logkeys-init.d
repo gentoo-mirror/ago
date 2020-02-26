@@ -8,13 +8,13 @@ start() {
 
 	start-stop-daemon \
 		--start \
-		--pidfile /var/run/logkeys.pid \
+		--pidfile /run/logkeys.pid \
 		--exec /usr/bin/logkeys -- -s ${LOGKEYS_ARGS}
 	eend $?
 }
 
 stop() {
 	ebegin "Stopping Logkeys"
-	start-stop-daemon --stop --pidfile /var/run/logkeys.pid
+	start-stop-daemon --stop --pidfile /run/logkeys.pid
 	eend $?
 }

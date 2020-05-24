@@ -11,5 +11,5 @@ RDEPEND=acct-group/queuemetrics acct-user/queuemetrics virtual/jdk:1.8
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.54/bin/apache-tomcat-8.5.54.tar.gz https://downloads.loway.ch/qm/QueueMetrics-19.10.17.tar.gz
-_eclasses_=multilib	797cda3549becfe50afdfa35192ca137	systemd	71fd8d2065d102753fb9e4d20eaf3e9f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c
+_eclasses_=multilib	ac7989ababbeabdef6fdc6e465b21644	systemd	71fd8d2065d102753fb9e4d20eaf3e9f	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c
 _md5_=d83be886a00db9565187d3e9e256884b

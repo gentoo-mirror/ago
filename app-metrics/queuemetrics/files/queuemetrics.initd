@@ -1,11 +1,11 @@
 #!/sbin/openrc-run
-# Copyright 2019 Agostino Sarubbo <ago@gentoo.org>
+# Copyright 2020 Agostino Sarubbo <ago@gentoo.org>
 # Distributed under the terms of the GNU General Public License v2
 
-PIDFILE="/run/queuemetrics.pid"
+PIDFILE="/run/${SVCNAME}.pid"
 
 start() {
-	ebegin "Starting QueueMetrics"
+	ebegin "Starting ${SVCNAME}"
 	start-stop-daemon \
 				--start \
 				--quiet \
@@ -13,7 +13,7 @@ start() {
 				--stdout ${CATALINA_HOME}/logs/catalina.out \
 				--stderr ${CATALINA_HOME}/logs/catalina.out \
 				--chdir ${CATALINA_TMPDIR} \
-				--user queuemetrics:queuemetrics \
+				--user ${SVCNAME}:${SVCNAME} \
 				--make-pidfile --pidfile ${PIDFILE} \
 				--exec java \
 				-- \
@@ -26,7 +26,7 @@ start() {
 stop() {
 	MYPID="$( cat ${PIDFILE} )"
 
-	ebegin "Stopping QueueMetrics"
+	ebegin "Stopping ${SVCNAME}"
 	start-stop-daemon \
 				--stop \
 				--quiet \
@@ -40,17 +40,17 @@ stop() {
 					stop
 	sleep 5
 
-	# check if the pid still exist and wait fro graceful shutdown
+	# check if the pid still exist and wait for a graceful shutdown
 	COUNT="1"
-	while [ ! -z "$( ps -p ${MYPID} | grep ${MYPID} )" -a "${COUNT}" -lt "5" ]
+	while [ -n "$( ps -p ${MYPID} | grep ${MYPID} )" ] && [ "${COUNT}" -lt "5" ]
 	do
-		echo "Waiting queuemetrics stop for 3 seconds"
+		echo "Waiting ${SVCNAME} stop for 3 seconds"
 		sleep 3
 		let COUNT++
 	done
 
 	# if the pid still exists, then kill it
-	if [ ! -z "$( ps -p ${MYPID} | grep ${MYPID} )" ]
+	if [ -n "$( ps -p ${MYPID} | grep ${MYPID} )" ]
 	then
 		start-stop-daemon --stop --quiet --pidfile ${PIDFILE} --signal=9
 		kill -9 ${MYPID}

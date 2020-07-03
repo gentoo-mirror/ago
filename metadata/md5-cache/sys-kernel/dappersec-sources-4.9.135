@@ -6,9 +6,9 @@ HOMEPAGE=https://github.com/dapperlinux/dapper-secure-kernel-patchset-stable
 IUSE=deblob symlink build
 KEYWORDS=-* ~amd64
 LICENSE=GPL-2 linux-firmware
-RDEPEND=>=sys-devel/gcc-4.5 !build? ( dev-lang/perl sys-devel/bc sys-devel/bison sys-devel/flex sys-devel/make >=sys-libs/ncurses-5.2 virtual/libelf )
+RDEPEND=>=sys-devel/gcc-4.5 !build? ( dev-lang/perl sys-devel/bc sys-devel/bison sys-devel/flex sys-devel/make >=sys-libs/ncurses-5.2 virtual/libelf virtual/pkgconfig )
 RESTRICT=binchecks strip
 SLOT=4.9.135
 SRC_URI=https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.9.tar.xz https://dev.gentoo.org/~ago/distfiles/dappersec-sources/dappersec-sources-4.9.135.tar.xz
-_eclasses_=eapi7-ver	f9ec87e93172b25ce65a85303dc06964	estack	686eaab303305a908fd57b2fd7617800	kernel-2	62ce5abb4a3cde62969c4314bbf96d6f	multilib	2477ebe553d3e4d2c606191fe6c33602	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb
+_eclasses_=eapi7-ver	f9ec87e93172b25ce65a85303dc06964	estack	686eaab303305a908fd57b2fd7617800	kernel-2	b018f94025c867de0d2a56af55679a7a	multilib	2477ebe553d3e4d2c606191fe6c33602	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb
 _md5_=7ed2a3460c5a3cfea41202a0a5d89a57

@@ -10,6 +10,6 @@ PDEPEND=mysql? ( virtual/mysql[server] ) uniloader? ( app-metrics/uniloader )
 RDEPEND=acct-group/queuemetrics acct-user/queuemetrics virtual/jdk:1.8
 RESTRICT=mirror
 SLOT=0
-SRC_URI=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.57/bin/apache-tomcat-8.5.57.tar.gz https://downloads.loway.ch/qm/QueueMetrics-19.10.21.tar.gz
+SRC_URI=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.57/bin/apache-tomcat-8.5.57.tar.gz https://downloads.loway.ch/qm/QueueMetrics-19.10.23.tar.gz
 _eclasses_=multilib	2477ebe553d3e4d2c606191fe6c33602	systemd	71fd8d2065d102753fb9e4d20eaf3e9f	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb
 _md5_=8453d6183876fd85430c7a084bbc73c4

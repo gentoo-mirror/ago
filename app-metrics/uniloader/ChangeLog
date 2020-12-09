@@ -1,3 +1,8 @@
+*uniloader-0.7.5 (09 Dec 2020)
+
+  09 Dec 2020; Agostino Sarubbo <ago@gentoo.org> +uniloader-0.7.5.ebuild:
+  app-metrics/uniloader: version bump to 0.7.5
+
 *uniloader-0.6.7 (11 Oct 2019)
 
   11 Oct 2019; Agostino Sarubbo <ago@gentoo.org> +uniloader-0.6.7.ebuild:

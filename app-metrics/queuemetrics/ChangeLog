@@ -1,3 +1,9 @@
+*queuemetrics-20.11.4 (09 Dec 2020)
+
+  09 Dec 2020; Agostino Sarubbo <ago@gentoo.org> +queuemetrics-20.11.4.ebuild,
+  -queuemetrics-20.11.3.ebuild:
+  app-metrics/queuemetrics: version bump to 20.11.4 - remove old.
+
 *queuemetrics-20.11.3 (27 Nov 2020)
 
   27 Nov 2020; Agostino Sarubbo <ago@gentoo.org> +queuemetrics-20.11.3.ebuild,

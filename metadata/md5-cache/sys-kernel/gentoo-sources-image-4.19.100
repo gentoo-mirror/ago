@@ -8,5 +8,5 @@ RDEPEND=sys-kernel/linux-firmware
 RESTRICT=binchecks strip
 SLOT=4.19.100
 SRC_URI=https://dev.gentoo.org/~ago/distfiles/gentoo-sources-image/gentoo-sources-image-4.19.100.tar.xz
-_eclasses_=mount-boot	1d350bab4d6e73d65352ec6f1fd43ede
+_eclasses_=mount-boot	060ced4c5e0fd737db17cbb609bbf557
 _md5_=146e27502faf088579a889008879d053

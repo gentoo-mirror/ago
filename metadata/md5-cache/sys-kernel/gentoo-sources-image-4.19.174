@@ -2,6 +2,7 @@ DEFINED_PHASES=install postinst postrm preinst prerm pretend setup
 DESCRIPTION=A gentoo-sources generic kernel image
 EAPI=7
 HOMEPAGE=https://www.gentoo.org
+INHERIT=mount-boot
 KEYWORDS=-* ~amd64
 LICENSE=GPL-2
 RDEPEND=sys-kernel/linux-firmware

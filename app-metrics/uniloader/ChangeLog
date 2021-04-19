@@ -1,3 +1,10 @@
+*uniloader-21.04.1 (19 Apr 2021)
+
+  19 Apr 2021; Agostino Sarubbo <ago@gentoo.org> +uniloader-21.04.1.ebuild,
+  -uniloader-0.6.0.ebuild, -uniloader-0.6.5.ebuild, -uniloader-0.6.6.ebuild,
+  -uniloader-0.6.7.ebuild, -uniloader-0.7.5.ebuild, -uniloader-21.01.6.ebuild:
+  app-metrics/uniloader: version bump to 21.04.1 - remove old
+
 *uniloader-21.01.6 (12 Apr 2021)
 
   12 Apr 2021; Agostino Sarubbo <ago@gentoo.org> +uniloader-21.01.6.ebuild:

@@ -1,3 +1,9 @@
+*queuemetrics-21.04.7.86 (10 Nov 2021)
+
+  10 Nov 2021; Agostino Sarubbo <ago@gentoo.org>
+  +queuemetrics-21.04.7.86.ebuild, -queuemetrics-21.04.5.78.ebuild:
+  app-metrics/queuemetrics: version bump to 21.04.7.86 - remove old.
+
 *queuemetrics-21.04.5.78 (20 Sep 2021)
 
   20 Sep 2021; Agostino Sarubbo <ago@gentoo.org>

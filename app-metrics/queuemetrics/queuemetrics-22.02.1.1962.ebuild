@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # DISCLAIMER:
@@ -8,7 +8,7 @@ EAPI=7
 
 inherit systemd
 
-TOMCAT_VERSION="8.5.73"
+TOMCAT_VERSION="8.5.75"
 
 DESCRIPTION="A monitoring and reporting suite for asterisk based PBX"
 HOMEPAGE="https://www.queuemetrics.com"

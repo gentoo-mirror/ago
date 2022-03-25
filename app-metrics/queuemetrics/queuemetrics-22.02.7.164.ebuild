@@ -8,13 +8,13 @@ EAPI=7
 
 inherit systemd
 
-TOMCAT_VERSION="8.5.75"
+TOMCAT_VERSION="8.5.77"
 
 DESCRIPTION="A monitoring and reporting suite for asterisk based PBX"
 HOMEPAGE="https://www.queuemetrics.com"
 LICENSE="all-rights-reserved"
 SRC_URI="https://archive.apache.org/dist/tomcat/tomcat-8/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz \
-	https://downloads.loway.ch/qm/QueueMetrics-${PV}.tar.gz"
+	https://downloads.loway.ch/software/${PN}/QueueMetrics-${PV}.tar.gz"
 RESTRICT="mirror"
 SLOT="0"
 KEYWORDS="~amd64"

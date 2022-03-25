@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # DISCLAIMER:
@@ -9,7 +9,7 @@ EAPI=7
 DESCRIPTION="A go-based program that uploads data to a local or remote QueueMetrics"
 HOMEPAGE="https://www.queuemetrics-live.com/uniloader.jsp"
 LICENSE="all-rights-reserved"
-SRC_URI="https://downloads.loway.ch/qm/${P}.tar.gz"
+SRC_URI="https://downloads.loway.ch/software/${PN}/${P}.tar.gz"
 RESTRICT="mirror"
 SLOT="0"
 KEYWORDS="~amd64"

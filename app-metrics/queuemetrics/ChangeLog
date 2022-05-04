@@ -1,3 +1,9 @@
+*queuemetrics-22.02.9.178 (04 May 2022)
+
+  04 May 2022; Agostino Sarubbo <ago@gentoo.org>
+  +queuemetrics-22.02.9.178.ebuild, -queuemetrics-22.02.7.164.ebuild:
+  app-metrics/queuemetrics: version bump to 22.02.9.178 - remove old.
+
 *queuemetrics-22.02.7.164 (25 Mar 2022)
 
   25 Mar 2022; Agostino Sarubbo <ago@gentoo.org>

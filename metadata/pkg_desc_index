@@ -6,6 +6,4 @@ app-metrics/uniloader 22.02.1: A go-based program that uploads data to a local o
 media-video/uvccapture 0.5: Take a photo from webcam on your shell
 media-video/uvcdynctrl 0.2.5: Manage dynamic controls in uvcvideo
 net-analyzer/logkeys 9999: a GNU/Linux keylogger that works!
-net-analyzer/slowhttptest 1.5: Application Layer DoS attack simulator
-net-analyzer/thc-ssl-dos 1.4: Tool to DoS
 sys-kernel/gentoo-sources-image 4.19.174: A gentoo-sources generic kernel image

@@ -1,9 +1,9 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-inherit cmake-utils
+inherit cmake udev
 
 MY_PN="libwebcam"
 
@@ -21,7 +21,17 @@ RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${MY_PN}-${PV}"
 
+PATCHES=( "${FILESDIR}/${P}-nocompress.patch" )
+
 src_install() {
-	cmake-utils_src_install
-	use static-libs || rm -fr "${D}"usr/lib*/${MY_PN}.a
+	cmake_src_install
+	use static-libs || rm -fr "${D}"/usr/lib*/${MY_PN}.a
+}
+
+pkg_postinst() {
+	udev_reload
+}
+
+pkg_postrm() {
+	udev_reload
 }

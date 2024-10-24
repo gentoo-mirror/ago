@@ -4,16 +4,16 @@
 # DISCLAIMER:
 # This ebuild does NOT follow the Gentoo QA Rules, instead it follows the upstream way to install and run the application
 
-EAPI=7
+EAPI=8
 
 inherit systemd
 
-TOMCAT_VERSION="8.5.100"
+TOMCAT_VERSION="9.0.96"
 
 DESCRIPTION="A monitoring and reporting suite for asterisk based PBX"
 HOMEPAGE="https://www.queuemetrics.com"
 LICENSE="all-rights-reserved"
-SRC_URI="https://archive.apache.org/dist/tomcat/tomcat-8/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz \
+SRC_URI="https://archive.apache.org/dist/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz \
 	https://downloads.loway.ch/software/${PN}/QueueMetrics-${PV}.tar.gz"
 RESTRICT="mirror"
 SLOT="0"
@@ -35,19 +35,19 @@ pkg_setup() {
 		ewarn
 		ewarn
 		ewarn "This ebuild will install a newer version of apache tomcat."
-		ewarn "You need to restart udev as soon as possible to make the upgrade go into effect."
+		ewarn "You need to restart ${PN} as soon as possible to make the upgrade go into effect."
 		ewarn "For sys-apps/openrc users it is:"
-		ewarn "# /etc/init.d/queuemetrics restart"
+		ewarn "# /etc/init.d/${PN} restart"
 		ewarn
 		ewarn "For sys-apps/systemd users it is:"
-		ewarn "# systemctl restart queuemetrics"
+		ewarn "# systemctl restart ${PN}"
 		ewarn
 		ewarn
 	fi
 }
 
 src_install() {
-	dodir /opt/${PN}/tomcat/{logs,temp,webapps,work}
+	keepdir /opt/${PN}/tomcat/{logs,temp,webapps,work}
 	insinto /opt/${PN}/tomcat
 	doins -r apache-tomcat-${TOMCAT_VERSION}/{bin,conf,lib}
 

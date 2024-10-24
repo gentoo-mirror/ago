@@ -1,7 +1,7 @@
 BDEPEND=virtual/pkgconfig
 DEFINED_PHASES=install setup
 DESCRIPTION=A monitoring and reporting suite for asterisk based PBX
-EAPI=7
+EAPI=8
 HOMEPAGE=https://www.queuemetrics.com
 INHERIT=systemd
 IUSE=+mysql uniloader
@@ -11,6 +11,6 @@ PDEPEND=mysql? ( virtual/mysql[server] ) uniloader? ( app-metrics/uniloader )
 RDEPEND=acct-group/queuemetrics acct-user/queuemetrics virtual/jdk:1.8
 RESTRICT=mirror
 SLOT=0
-SRC_URI=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.100/bin/apache-tomcat-8.5.100.tar.gz https://downloads.loway.ch/software/queuemetrics/QueueMetrics-24.05.1.6.tar.gz
+SRC_URI=https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.96/bin/apache-tomcat-9.0.96.tar.gz https://downloads.loway.ch/software/queuemetrics/QueueMetrics-24.05.6.63.tar.gz
 _eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	systemd	54bd206bb5c4efac6ae28b6b006713b0
-_md5_=4cde2b79adfbada8b99adaf7b781f48d
+_md5_=6e00545e3561c0e70f45fa078c73ede9

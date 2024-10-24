@@ -1,6 +1,6 @@
 acct-group/queuemetrics 0: Group for app-metrics/queuemetrics and app-metrics/uniloader
 acct-user/queuemetrics 0: User for app-metrics/queuemetrics and app-metrics/uniloader
-app-metrics/queuemetrics 24.05.1.6: A monitoring and reporting suite for asterisk based PBX
+app-metrics/queuemetrics 24.05.6.63: A monitoring and reporting suite for asterisk based PBX
 app-metrics/uniloader 22.11.2: A go-based program that uploads data to a local or remote QueueMetrics
 media-video/uvccapture 0.5: Take a photo from webcam on your shell
 media-video/uvcdynctrl 0.2.5: Manage dynamic controls in uvcvideo

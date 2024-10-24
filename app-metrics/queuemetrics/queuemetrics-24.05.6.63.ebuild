@@ -2,7 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 
 # DISCLAIMER:
-# This ebuild does NOT follow the Gentoo QA Rules, instead it follows the upstream way to install and run the application
+# This ebuild does NOT follow the Gentoo QA Rules,
+# instead it follows the upstream way to install and run the application
 
 EAPI=8
 
@@ -12,22 +13,20 @@ TOMCAT_VERSION="9.0.96"
 
 DESCRIPTION="A monitoring and reporting suite for asterisk based PBX"
 HOMEPAGE="https://www.queuemetrics.com"
-LICENSE="all-rights-reserved"
 SRC_URI="https://archive.apache.org/dist/tomcat/tomcat-9/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz \
 	https://downloads.loway.ch/software/${PN}/QueueMetrics-${PV}.tar.gz"
-RESTRICT="mirror"
+S="${WORKDIR}"
+LICENSE="all-rights-reserved"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="+mysql uniloader"
-
+RESTRICT="mirror"
 
 RDEPEND="acct-group/queuemetrics
 	acct-user/queuemetrics
 	virtual/jdk:1.8"
 PDEPEND="mysql? ( virtual/mysql[server] )
 	uniloader? ( app-metrics/uniloader )"
-
-S="${WORKDIR}"
 
 pkg_setup() {
 	if [ "$( cat /opt/queuemetrics/tomcat/VERSION )" != "${TOMCAT_VERSION}" ]
